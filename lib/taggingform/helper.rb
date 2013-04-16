@@ -1,13 +1,14 @@
-module RailsKindeditor
+module TaggingForm
   module Helper
-    def kindeditor_tag(name, content = nil, options = {})
+    
+    def tadding_tag(name, content = nil, options = {})
       id = sanitize_to_id(name)
       input_html = { :id => id }.merge(options.delete(:input_html) || {})
       output = ActiveSupport::SafeBuffer.new
       output << text_area_tag(name, content, input_html)
     end
     
-    def kindeditor(name, method, options = {})
+    def tadding_tag(name, method, options = {})
       input_html = (options.delete(:input_html) || {})
       hash = input_html.stringify_keys
       instance_tag = ActionView::Base::InstanceTag.new(name, method, self, options.delete(:object))
