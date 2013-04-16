@@ -20,8 +20,8 @@ module TaggingForm
   end
   
   module Builder
-    def kindeditor(method, options = {})
-      @template.send("kindeditor", @object_name, method, objectify_options(options))
+    def tadding(method, options = {})
+      @template.send("tadding", @object_name, method, objectify_options(options))
     end
   end
 end
