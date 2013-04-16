@@ -8,7 +8,7 @@ module TaggingForm
       output << text_area_tag(name, content, input_html)
     end
     
-    def tadding_tag(name, method, options = {})
+    def tadding(name, method, options = {})
       input_html = (options.delete(:input_html) || {})
       hash = input_html.stringify_keys
       instance_tag = ActionView::Base::InstanceTag.new(name, method, self, options.delete(:object))
