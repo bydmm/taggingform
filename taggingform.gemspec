@@ -1,12 +1,16 @@
-Gem::Specification.new do |s|
-  s.name        = 'taggingform'
-  s.version     = '0.0.0'
-  s.date        = '2013-04-16'
-  s.summary     = "a plugin with jquery plug tagging!"
-  s.description = "a plugin with jquery plug tagging http://aehlke.github.io/tag-it/"
-  s.authors     = ["bydmm"]
-  s.email       = 'miku@maimoe.com'
-  s.files       = ["lib/taggingform.rb"]
-  s.homepage    =
-    'http://rubygems.org/gems/taggingform'
+# -*- encoding: utf-8 -*-
+$:.push File.expand_path("../lib", __FILE__)
+require "taggingform/version"
+
+
+Gem::Specification.new do |gem|
+  gem.name        = 'taggingform'
+  gem.version     = '0.0.0'
+  gem.date        = '2013-04-16'
+  gem.summary     = "a plugin with jquery plug tagging!"
+  gem.description = "a plugin with jquery plug tagging http://aehlke.github.io/tag-it/"
+  gem.authors     = ["bydmm"]
+  gem.email       = 'miku@maimoe.com'
+  gem.files         = `git ls-files`.split("\n")
+  gem.homepage    = 'http://rubygemgem.org/gems/taggingform'
 end
